@@ -1,0 +1,22 @@
+
+body {
+    text-align: center;
+}
+button {
+    width: 20px; 
+    height: 20px;
+    border-radius: 0;
+    border: 1px solid black;
+    outline: 0;
+    cursor: pointer;
+    background: transparent;
+    white-space: nowrap;
+    margin: -2px 0px;
+}
+#dynamic-table {
+    margin: auto;
+}
+#submit-table {
+    width: auto;
+    margin-bottom: 30px;
+}
