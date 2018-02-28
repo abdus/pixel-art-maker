@@ -57,12 +57,15 @@ document.addEventListener('click', function(e){
 // ================================================================
 createTable();
 createDynamicTable.addEventListener("click", function(){
-    document.getElementById("dynamic-table").innerHTML = "";
-    m = document.getElementById("row-num").value;
-    n = document.getElementById("col-num").value; 
-    createTable();
-    // set a minimum body width dynamically 
-    bodyWidth = (n * 20) + 50;
-    document.getElementsByTagName("body")[0].style.minWidth = bodyWidth + "px";
+    if (document.getElementById("row-num").value <=100 && document.getElementById("col-num").value <= 100) {
+        document.getElementById("dynamic-table").innerHTML = "";
+        m = document.getElementById("row-num").value;
+        n = document.getElementById("col-num").value; 
+        createTable();
+        // set a minimum body width dynamically 
+        bodyWidth = (n * 20) + 50;
+        document.getElementsByTagName("body")[0].style.minWidth = bodyWidth + "px";
+    } else {
+        alert("Rows and Columns count should be less than 100");
+    }
 });
-
