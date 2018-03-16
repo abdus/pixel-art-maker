@@ -1,22 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed');
 
 body {
     text-align: center;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    /* background: url(./img/bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed; */
+    font-weight: 900;
 }
-button {
-    width: 20px; 
-    height: 20px;
-    border-radius: 0;
-    border: 1px solid black;
-    outline: 0;
-    cursor: pointer;
-    background: transparent;
-    white-space: nowrap;
-    margin: -2px 0px;
+#particles-js {
+    /* position: absolute; */
 }
 #dynamic-table {
     margin: auto;
 }
+#flex-div{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(12, 12, 12, 0.288);
+    padding: 20px 0;
+}
+.flex-child{
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
 #submit-table {
     width: auto;
     margin-bottom: 30px;
+}
+input {
+    text-align: left;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(94, 94, 94, 0.507);
+    outline:none;
+    background: transparent;
+}
+input[type="text"] {
+    width: 30px;
+}
+input[type="color"] {
+    border: unset;
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+    outline: 0px;
+}
+input[type="submit"] {
+    background: unset;
+    border: 1px solid gray;
+    border-radius: 5PX;
+    cursor: pointer;
+}
+td{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    
+    /* border-radius: 50%; */
+}
+table, tr {
+    margin: auto;
+    padding: 0px;
+    border-collapse: unset;
+    border-spacing: 0px;
+    outline: none;
+    cursor: pointer;
+}
+table {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.349);
+    background: white;
+}
+#overcount-alert {
+    display: none;
+    opacity: 0;
+    color: white;
+    background: rgb(240, 78, 3);
+    width: auto;
+    margin: 20px auto;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+    font-weight: 900;
+    transition: 1s all ease;
+}
+
+#dynamic-table{
+    margin-bottom: 80px;
+}
+#circle-ract-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+#circle-canvas {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.815);
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+#ractangle-canvas {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.815);
+    margin: auto;
+    cursor: pointer;
+}
+.box-header {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 600px) {
+    #flex-div {
+        flex-direction: column;
+    }
+    .flex-child{
+        width: 100%;
+        padding: 0px;
+    }
 }

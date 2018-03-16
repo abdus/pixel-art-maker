@@ -8,20 +8,44 @@
     <title>Udacity</title>
 </head>
 <body>
-    <div><h1>Final Project</h1></div>
-    Just the logic part, not a color-rich one.<br><br>
-    <form>
-        Rows:<br><input id="row-num" type="number" value="10" max="100"><br><br>
-        Cols:<br><input id="col-num" type="number" value="10" max="100"><br>
-    </form><br>
-    <button class="outer-button" id="submit-table">Create Table</button><br><br>
-    <input id="choose-color" type="color" value="#20e2e5"><br><br>
+    <div id="particles-js">
+        <div><h1>Pixel Art Maker </h1></div>
+        Web App to Make Pixel Arts<br><br>
+        <div id="flex-div">
+            <div class="flex-child">
+                <form>
+                    <u class="box-header">Canvas Size</u><br>
+                    Box Count in Row: <br><input id="row-num" type="number" value="10" max="100"><br><br>
+                    Box Count in Column:<br><input id="col-num" type="number" value="10" max="100"><br><br>
+                </form>
+                <input class="outer-button" id="submit-table" type="submit" value="Create Canvas!"><br><br>
+            </div>
+            
+            <div class="flex-child">
+                <u class="box-header">Select Color</u> <br>
+                Choose a color to start designing.<br><br>
+                <input type="color" id="cell-background-color" value="#11d7ee"><br><br><br>
+                <u class="box-header">Set Cell Size</u> <br>
+                Your preferred grid cell size.<br><br>
+                <input type="range" min="1" max="50" value="10" id="cell-size">
+            </div>
+            <div class="flex-child">
+                <u class="box-header">Circle or Ractangle</u><br>
+                Set how you want the grid cells to be displayed.<br><br>
+                <div id="circle-ract-wrapper">
+                    <div id="ractangle-canvas"></div><br><br>
+                    <div id="circle-canvas"></div>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Start drawing your next masterpiece</h3>
+        <div id="dynamic-table"></div>
+        <div id="overcount-alert">ROWS and COLUMNS count should be LESS then or EQUAL to 100 and GREATER then or EQUAL to 0. </div>
     
-    <div id="dynamic-table">
-
+    
     </div>
-    
-    
+    <script src="particles.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
